@@ -1,0 +1,69 @@
+@use '../base/variables';
+
+button{
+    color: variables.$white-color;   
+    background-color: variables.$secondary-color;
+    border: 1px solid variables.$secondary-color;
+    border-radius: 3px;
+    padding: 7px 10px;
+    font-size: 1rem;   
+    &:hover {
+        background-color: variables.$secondary-color-dark;
+        border: 1px solid variables.$secondary-color-dark;
+      } 
+}
+
+.btn__formContainer{ 
+    button{
+        margin: 0 2px;
+    }
+}
+
+.btn-primary{
+    background-color: variables.$secondary-color;
+    border: 1px solid variables.$secondary-color;
+    &:hover {
+        background-color: variables.$secondary-color-dark;
+        border: 1px solid variables.$secondary-color-dark;
+      }
+}
+
+.btn__danger{
+    background-color: variables.$danger-color;
+    border: 1px solid variables.$danger-color;
+    &:hover {
+        background-color: variables.$danger-color-dark;
+        border: 1px solid variables.$danger-color-dark;
+      }
+}
+
+.btn-success{
+    background-color: variables.$success-color;
+    border: 1px solid variables.$success-color;
+    &:hover {
+        background-color: variables.$success-color-dark;
+        border: 1px solid variables.$success-color-dark;
+      }
+}
+
+.botonera{
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button{
+        margin: 0 3px;
+    }
+}

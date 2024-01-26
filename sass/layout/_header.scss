@@ -1,0 +1,50 @@
+@use '../base/variables';
+@import '../abstracts/responsive';
+
+.search__header--container{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+
+    > input{
+        min-width: 180px;
+        margin-left: 3px;
+        margin-right: 0;
+        border-radius: 4px 0 0 4px;
+    }
+
+    > button{
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+#idTitle{  
+    color: variables.$text-title-color;
+    font-family: variables.$font-family-brand;
+    text-shadow: 3px 3px 2px variables.$text-shadow-color;
+    font-size: 2.5rem;
+    @include xs{
+        
+      }
+  
+      @include sm{
+        
+      }
+  
+      @include md{
+        
+      }
+  
+      @include lg{
+        
+      }
+  
+      @include xl{
+        
+      }
+  
+      @include xxl{
+        
+      }
+}
+

@@ -1,0 +1,76 @@
+@use '../base/variables';
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.form__container{
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px variables.$black-color-40;
+    color: variables.$grey-color;
+    display: block;
+    padding:10px 5%;
+}
+
+.form__title{
+    color: variables.$text-title-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: variables.$font-family;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.form__content{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+
+    label{
+        text-align: left;
+        margin-top: 10px;
+        padding: 5px 0;
+        color:  variables.$text-title-color;
+    }
+
+    input{
+        width: auto;
+    }
+}
+
+.form__content--row{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+
+    .form__content{
+        width: 49%;
+    }
+}
+
+.erroMessage{
+    color:variables.$red-color;
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
+
+.animation{
+    position: relative;
+    overflow: hidden;
+    animation: moveFromRtL 1s ease-in-out;
+  }
+
+.btn__formContainer{
+    padding: 10px 0;
+    display: flex;
+    justify-content: right;
+}
+

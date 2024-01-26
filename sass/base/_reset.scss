@@ -1,0 +1,67 @@
+@use 'variables';
+@use 'typography';
+@import '../abstracts/responsive';
+
+body{
+    background-color: variables.$white-color;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    // position: relative;
+}
+
+h1{
+    color: variables.$text-title-color;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;    
+    font-family: variables.$font-family;
+    padding: 10px 5px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 1px 1px 2px variables.$text-shadow-color;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Hace que ocupe el espacio restante en el contenedor flex */
+}
+
+section {
+    font-family: variables.$font-family;
+    padding: 20px 20%;
+    text-align: center;
+    option{
+        padding: 15px 2px;
+    }
+
+    @include xs{
+        padding: 20px 2%;
+      }
+  
+      @include sm{
+        padding: 20px 2%;
+      }
+  
+      @include md{
+        padding: 20px 2%;
+      }
+  
+      @include lg{
+        padding: 20px 5%;
+      }
+  
+      @include xl{
+        padding: 20px 5%;
+        
+      }
+  
+      @include xxl{
+      }
+}
+

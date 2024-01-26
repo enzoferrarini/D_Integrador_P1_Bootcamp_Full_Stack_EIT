@@ -1,0 +1,45 @@
+@use '../base/variables';
+@import '../abstracts/responsive';
+
+.destacados{
+    min-height: 400px;
+    background-color: variables.$yellow-color-light-20;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 20px 10%;
+    justify-content: space-evenly;
+    border-bottom: 5px solid variables.$yellow-border-color;
+
+    @include xs{
+      // background-color: #fa1818;
+      padding: 20px 2%;
+    }
+
+    @include sm{
+      // background-color: #87ceeb;
+      padding: 20px 2%;
+    }
+
+    @include md{
+      // background-color: #00a118;
+      padding: 20px 2%;
+    }
+
+    @include lg{
+      // background-color: #86063f;
+      padding: 20px 5%;
+    }
+
+    @include xl{
+      // background-color: #ba07b1;
+      padding: 20px 5%;
+      
+    }
+
+    @include xxl{
+      // background-color: #ababab;
+    }
+
+  }
+

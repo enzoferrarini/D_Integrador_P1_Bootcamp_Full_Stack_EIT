@@ -1,0 +1,14 @@
+@use '../base/variables';
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    i{
+        font-size: 2rem;
+        &:hover{
+            color:variables.$black-color;
+        }
+    }
+}

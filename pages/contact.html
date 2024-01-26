@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Juguetería Cósmica</title>
+</head>
+<body>  
+    <div id="mensajeFlotante" class="sticky" >
+        <div class="sticky__header">
+            <div></div>
+            <strong>Mensaje</strong>
+        </div>
+        <div class="sticky__body">
+            <p id="idMsgSticky"></p>          
+        </div>
+    </div>
+    <div class="nav__bar">   
+        <a href="../index.html">  
+            <p id="idTitle">Juguetería Cósmica</p>     
+        </a>           
+    </div>    
+    <section>
+        <div class="form__container">            
+            <form id="sendCometarios">
+                <span class="form__title">
+                    Contacto
+                </span>
+                <div class="form__content">
+                    <label for="idName"  id="idLabelName">Nombre (*)</label>
+                    <input type="text" autocomplete="off"  name="idName" id="idName" placeholder="Ingrese nombre y apellido">
+                    <p class="erroMessage" id="idNameMsgError"></p>
+
+                    <label for="idEmail"  id="idLabelEmaik">e-mail (*)</label>
+                    <input type="text" autocomplete="off" name="idEmail" id="idEmail" placeholder="Ingrese su e-mail">
+                    <p class="erroMessage" id="idEmailMsgError"></p>
+
+                    <label for="idComentario"  id="idLabelComentario">Comentarios (*)</label>
+                    <textarea class="ta__resize--none" autocomplete="off" name="idComentario" style="height: 170px;" id="idComentario" placeholder="Ingrese comentarios"></textarea>
+                    <p class="erroMessage" id="idComentarioMsgError"></p>
+                </div>
+                <div class="btn__formContainer">
+                    <button type="submit" id="idBtnComment">Enviar Comentarios</button>
+                    <a href="../index.html">  
+                        <button class="btn__danger" type="button" id="idBtnCancel">Cancelar</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+        <div class="footer">
+            <div class="redes">
+                <p class="footer__tittle">Juguetería Cósmica</p> 
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="contactos flex__direction ai__c">
+                <p>¿Necesitas Ayuda?</p>
+                <p class="d__flex f__column ai__c">
+                    <span>Centro de Ayuda</span>
+                    <span>Preguntas Frecuentes</span>
+                    <span>Solicitud devoluciones</span>              
+                </p>
+
+            </div>
+            <div class="contactos flex__direction ai__c">
+                <p>Atención al Cliente</p>
+                <p class="d__flex f__column ai__c">
+                    <span>0800 122 0338</span>
+                    <span>0810 999 3728</span>
+                    <span>contacto@jc.com</span>              
+                </p>
+
+            </div>
+            <div class="contactos flex__direction ai__c">
+                <p>Venta Telefónica</p>
+                <p class="d__flex f__column ai__c">
+                    <span>0810 333 8700</span>
+                    <span>ventas@jc.com</span>              
+                </p>
+
+            </div>
+        </div> 
+    
+    <script src="../js/stickyMsg.js"></script>
+    <script src="../js/validations.js"></script>
+    <script src="../js/validateComment.js"></script>
+</body>
+</html>

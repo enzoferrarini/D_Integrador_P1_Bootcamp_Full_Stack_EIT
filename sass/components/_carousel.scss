@@ -1,0 +1,13 @@
+.carousel-container {
+    width: 100%;
+    overflow:hidden;
+}
+
+.carousel__slide {
+    height: inherit;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    opacity:1;
+    transition: opacity 2s;
+}

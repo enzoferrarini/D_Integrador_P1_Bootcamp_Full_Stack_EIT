@@ -1,0 +1,99 @@
+@use '../base/variables';
+@import '../abstracts/responsive';
+
+.footer{
+    background-color: variables.$secondary-color;
+    color: variables.$white-color;
+    font-family: variables.$font-family;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 10%;
+    // position: absolute;
+    // bottom: 0;
+
+    @include xs{
+        font-size: 1.1rem;
+        padding: 20px 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include sm{
+        font-size: 1.1rem;
+        padding: 20px 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include md{
+        font-size: 1rem;
+        padding: 20px 2%;
+    }
+
+    @include lg{
+       
+        padding: 20px 5%;
+    }
+
+    @include xl{
+        flex-direction: row;
+        padding: 20px 5%;
+    }
+
+    @include xxl{
+        flex-direction: row;
+    }
+
+    a{
+        padding: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    p:first-child:not(.footer__tittle) {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        @include xs{
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+    
+        @include sm{
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+    
+        @include md{
+            
+            font-size: 1rem;
+        }
+    }
+}
+
+.footer__tittle{      
+    color: variables.$white-color;
+    font-family: variables.$font-family-brand;
+    font-size: 2.5rem;    
+
+    @include xs{
+        font-size: 2rem;    
+    }
+
+    @include sm{
+        font-size: 2rem; 
+    }
+
+    @include md{
+        font-size: 1.5rem; 
+    }
+
+    @include lg{       
+        font-size: 2rem; 
+    }
+}

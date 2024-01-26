@@ -1,0 +1,24 @@
+//paddins 
+@for $i from 1 through 10 {
+    .pt__#{$i * 10} {
+        padding-top: $i * 10px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .pb__#{$i * 10} {
+        padding-bottom: $i * 10px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .pl__#{$i * 10} {
+        padding-left: $i * 10px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .pr__#{$i * 10} {
+        padding-right: $i * 10px;
+    }
+}

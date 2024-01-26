@@ -1,0 +1,15 @@
+@use '../base/variables';
+
+input{
+    width: 22%;
+    height: 30px;
+    padding: 2px 10px;
+    color: variables.$grey-color;
+    border-radius: 4px;
+    border: 1px solid variables.$grey-color-light-10;
+    font-family: variables.$font-family;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+}

@@ -1,0 +1,50 @@
+@use '../base/variables';
+@import '../abstracts/responsive';
+
+.banner{
+   
+    background-color: variables.$lightblue-color;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid variables.$yellow-border-color;
+    text-align: center;
+    position: absolute; 
+    
+    height: 300px;
+    @include xs{
+        height: 200px;
+    }
+
+    @include sm{
+        height: 200px;
+    }
+
+    @include md{
+        height: 250px;
+    }
+}
+
+.buttonBanner{
+    width: 15px;
+    height: 15px;
+    background-color: #f2f2f2;
+    border-radius: 100%;
+    margin: 0 7px;
+}
+
+.carrusel__height
+{
+    height: 300px;
+    @include xs{
+        height: 200px;
+    }
+
+    @include sm{
+        height: 200px;
+    }
+
+    @include md{
+        height: 250px;
+    }
+}

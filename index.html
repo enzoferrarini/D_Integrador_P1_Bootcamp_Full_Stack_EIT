@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Juguetería Cósmica</title>
+</head>
+<body>      
+    <div id="mensajeFlotante" class="sticky" >
+        <div class="sticky__header">
+            <div></div>
+            <strong>Mensaje</strong>
+        </div>
+        <div class="sticky__body">
+            <p id="idMsgSticky"></p>          
+        </div>        
+    </div>
+    <div class="nav__bar">   
+        <a href="index.html"> 
+            <p id="idTitle">Juguetería Cósmica</p>     
+        </a>  
+        <div class="nav__links">
+            <div class="nav__bar-horizontal">
+                <a href="pages/addProduct.html">Alta de Productos</a>
+                <a href="pages/contact.html">Contacto</a>
+                <a href="pages/us.html">Nosotros</a>
+            </div>
+            <div class="search__header--container">
+                <input placeholder="Buscar.."></input>
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="carrito">
+                <img src="./img/others/carrito.svg" alt="carrito image">
+            </div>
+            <div class="dropdown">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+                <div class="dropdown__content">
+                    <a href="pages/addProduct.html">Alta de Productos</a>
+                    <a href="pages/contact.html">Contacto</a>
+                    <a href="pages/us.html">Nosotros</a>
+                </div>
+            </div>
+        </div>                     
+    </div>
+    <div class="flex__containter">  
+        <div class="carrusel__height">
+            <div class="carousel__slide hidden banner"></div>
+            <div class="carousel__slide hidden banner"></div>
+            <div class="carousel__slide hidden banner"></div>            
+        </div>
+        <div class="botonera">
+            <div id="B0" value="0" class="buttonBanner"></div>
+            <div id="B1" value="1" class="buttonBanner"></div>
+            <div id="B2" value="2" class="buttonBanner"></div>           
+        </div>
+    </div>
+
+    <div class="destacados">
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/HW1.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Hot Wheels
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X5 Unidades Auto Surtido Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/HW2.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Hot Wheels
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X5 - 4U Unidades Auto Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/HW3.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Hot Wheels
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X1 Unidad Auto Surtido Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/HW4.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Hot Wheels
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X1 Unidad Auto Surtido Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/HW5.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Hot Wheels
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X1 Unidad Auto Surtido Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/HW6.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Hot Wheels
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X1 Unidad Auto Surtido Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/TS1.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Buzz Lightyear
+                </p>
+                <p class="desc__card">
+                    Buzz Lightyear Muñeco Articulado 25cm Disney Pixar
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/TS2.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Forky
+                </p>
+                <p class="desc__card">
+                    Toy Story 4 Forky 10 Cm Original
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/TS3.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Woody
+                </p>
+                <p class="desc__card">
+                    Woody Toy Story Figura Accion Que Habla 15 Frases
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/OK1.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Bloques Encastre Oki
+                </p>
+                <p class="desc__card">
+                    Bloques Camion De Construcción - 400 Piezas
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/OK2.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Bloques Encastre Oki
+                </p>
+                <p class="desc__card">
+                    Autitos Hot Wheels X1 Unidad Auto Surtido Original Mattel
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header__card">
+                <img src="./img/prodcuts/OK3.webp" >
+            </div>
+            <div class="body__card">
+                <p class="titulo__card">
+                    Bloques Encastre Oki
+                </p>
+                <p class="desc__card">
+                    Bloques Encastre Camion Bombero 394 Pzas Oki
+                </p>
+                <p class="card__price">
+                    $11.257,00
+                </p>
+            </div>
+            <div class="footer__card">
+                <button class="btn__comprar">Comprar</button>
+            </div>
+        </div>
+    </div>
+        
+    <div class="footer">
+        <div class="redes">
+            <p class="footer__tittle">Juguetería Cósmica</p> 
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="contactos flex__direction ai__c">
+            <p>¿Necesitas Ayuda?</p>
+            <p class="d__flex f__column ai__c">
+                <span>Centro de Ayuda</span>
+                <span>Preguntas Frecuentes</span>
+                <span>Solicitud devoluciones</span>              
+            </p>
+
+        </div>
+        <div class="contactos flex__direction ai__c">
+            <p>Atención al Cliente</p>
+            <p class="d__flex f__column ai__c">
+                <span>0800 122 0338</span>
+                <span>0810 999 3728</span>
+                <span>contacto@jc.com</span>              
+             </p>
+
+        </div>
+        <div class="contactos flex__direction ai__c">
+            <p>Venta Telefónica</p>
+            <p class="d__flex f__column ai__c">
+                <span>0810 333 8700</span>
+                <span>ventas@jc.com</span>              
+             </p>
+
+        </div>
+    </div>   
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-contenido">
+            <p id="idPopupMsg"></p>
+            <div class="form__content--row jc__c mt__20 mb__10">
+                <input type="checkbox"  name="idNoMostrar" id="idNoMostrar">
+                <label for="idNoMostrar">No volver a mostrar Mensaje</label>
+            </div>
+            <button onclick="ocultarPopup()">Cerrar</button>
+        </div>
+    </div>
+    <script src="./js/stickyMsg.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

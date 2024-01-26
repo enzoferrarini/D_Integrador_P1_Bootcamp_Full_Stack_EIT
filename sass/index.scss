@@ -1,0 +1,37 @@
+//Uses archivos de la carpeta 'abstracts'
+@use 'abstracts/margins';
+@use 'abstracts/paddings';
+@use 'abstracts/helpers';
+
+//Uses archivos de la carpeta 'base'
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/variables';
+@use 'base/animations';
+
+//Uses archivos de la carpeta 'components'
+@use 'components/buttons';
+@use 'components/inputs';
+@use 'components/navbar';
+@use 'components/carousel';
+@use 'components/popups';
+@use 'components/textareas';
+@use 'components/cart';
+@use 'components/card'; 
+@use 'components/banner';
+@use 'components/socialMedia';
+ 
+
+//Uses archivos de la carpeta 'layout'
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/forms';
+
+//Uses archivos de la carpeta 'pages'
+@use 'pages/index';
+@use 'pages/us';   
+
+
+@import 'abstracts/responsive';
+

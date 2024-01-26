@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Juguetería Cósmica</title>
+</head>
+<body>  
+    <div id="mensajeFlotante" class="sticky" >
+        <div class="sticky__header">
+            <div></div>
+            <strong>Mensaje</strong>
+        </div>
+        <div class="sticky__body">
+            <p id="idMsgSticky"></p>          
+        </div>
+    </div>
+
+    <div class="nav__bar">   
+        <a href="../index.html">  
+            <p id="idTitle">Juguetería Cósmica</p>     
+        </a>         
+    </div>
+    
+    <section>
+        <div class="form__container">            
+            <form id="addProductForm">
+                <span class="form__title">
+                    Nuevo Producto
+                </span>
+                <div class="form__content">
+                    <label for="idName"  id="idLabelName">Nombre (*)</label>
+                    <input type="text" autocomplete="off"  name="idName" id="idName" placeholder="Ingrese nombre del juguete">
+                    <p class="erroMessage" id="idNameMsgError"></p>
+
+                    <label for="idCategory"  id="idLabelCategory">Categoria (*)</label>
+                    <input type="text" autocomplete="off"  name="idCategory" id="idCategory" placeholder="Ingrese categoría">
+                    <p class="erroMessage" id="idCategoryMsgError"></p>
+
+                    <label for="idBrand"  id="idBrandCategory">Marca (*)</label>
+                    <input type="text" autocomplete="off"  name="idBrand" id="idBrand" placeholder="Ingrese marca">
+                    <p class="erroMessage" id="idBrandMsgError"></p>
+
+                    <div class="form__content--row ai__fs">
+                        <div class="form__content">
+                            <label for="idPrice"  id="idlabelPrice">Precio (*)</label>
+                            <input type="text" autocomplete="off"  name="idPrice" id="idPrice">
+                            <p class="erroMessage" id="idPriceMsgError"></p>
+                        </div>
+                        <div class="form__content">
+                            <label for="idStock"  id="idLabelStock">Stock (*)</label>
+                            <input type="number" autocomplete="off"  name="idStock" id="idStock">
+                            <p class="erroMessage" id="idStockMsgError"></p>
+                        </div>
+                    </div>
+
+                    <label for="idShortDesc"  id="idLabelShortDesc">Descripción Corta (*)</label>
+                    <textarea  autocomplete="off" name="idShortDesc" id="idShortDesc" placeholder="Ingrese descripción corta"></textarea>
+                    <p class="erroMessage" id="idShortDescriptMsgError"></p>
+
+                    <label for="idLongDesc"  id="idLabelLongDesc">Descripción Larga</label>
+                    <textarea  autocomplete="off" name="idLongDesc" id="idLongDesc" placeholder="Ingrese descripción completa"></textarea>
+
+                    <div class="form__content--row jc__c">
+                        <input type="checkbox"  name="idDelivery" id="idDelivery">
+                        <label for="idDelivery" class="mt__10 mb__10" id="idLabelDelivery">Envio Gratis</label>
+                    </div>
+
+                    <div class="form__content--row ai__fs">
+                        <div class="form__content">
+                            <label for="idStartAge"  id="idLabelStartAge">Edad Desde (*)</label>
+                            <input type="number" autocomplete="off"   name="idStartAge" id="idStartAge">
+                            <p class="erroMessage" id="idStartAgeMsgError"></p>
+                        </div>
+                        <div class="form__content">
+                            <label for="idEndAge"  id="idLabelEndAge">Edad Hasta (*)</label>
+                            <input type="number" autocomplete="off"   name="idEndAge" id="idEndAge">
+                            <p class="erroMessage" id="idEndAgeMsgError"></p>
+                        </div>
+                    </div>                   
+                    <label for="idPictureFile"  id="label-picture">Foto</label>
+                    <div class="d__flex">
+                        <button calss="w__auto d__flex" id="btnFileLoad">                           
+                            Seleccionar
+                        </button>
+                        <input type="text" disabled  name="idFileNameSelected" id="idFileNameSelected" class="w__100">
+                        <div class="d__none">
+                            <input type="file" name="idPictureFile" id="idPictureFile" onchange="handleFileChange()">
+                        </div>  
+                    </div>
+                    <p class="erroMessage" id="idFileError"></p>                    
+                </div>
+                <div class="btn__formContainer">
+                    <button type="submit" id="idBtnAddProduct">Agregar producto</button>
+                    <a href="../index.html">  
+                        <button class=" btn__danger" type="button" id="idBtnCancel">Cancelar</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="redes">
+            <p class="footer__tittle">Juguetería Cósmica</p> 
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="contactos flex__direction ai__c">
+            <p>¿Necesitas Ayuda?</p>
+            <p class="d__flex f__column ai__c">
+                <span>Centro de Ayuda</span>
+                <span>Preguntas Frecuentes</span>
+                <span>Solicitud devoluciones</span>              
+            </p>
+
+        </div>
+        <div class="contactos flex__direction ai__c">
+            <p>Atención al Cliente</p>
+            <p class="d__flex f__column ai__c">
+                <span>0800 122 0338</span>
+                <span>0810 999 3728</span>
+                <span>contacto@jc.com</span>              
+             </p>
+
+        </div>
+        <div class="contactos flex__direction ai__c">
+            <p>Venta Telefónica</p>
+            <p class="d__flex f__column ai__c">
+                <span>0810 333 8700</span>
+                <span>ventas@jc.com</span>              
+             </p>
+
+        </div>
+    </div>  
+
+    <script src="../js/stickyMsg.js"></script>
+    <script src="../js/validations.js"></script>
+    <script src="../js/validateAddProduct.js"></script>
+</body>
+</html>
